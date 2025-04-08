@@ -6,10 +6,10 @@ File ini berisi semua parameter konfigurasi untuk GhibliBotTelegram
 
 # Konfigurasi Bot
 BOT_CONFIG = {
-    "token": "7308704589:AAHXgY6SYvPR5rws60dlBFVGS2oP-k4qalQ",
-    "name": "ghibli bot",
-    "username": "ghiblistyle_robot",
-    "version": "1.1.5",
+    "token": "YOUR_TELEGRAM_BOT_TOKEN",
+    "name": "GhibliBotTelegram",
+    "username": "ghibli_style_bot",
+    "version": "1.3.0",
     "release_date": "08/04/2025",
     "description": "Bot keren buat ngerubah foto jadi gaya Studio Ghibli",
 }
@@ -17,7 +17,7 @@ BOT_CONFIG = {
 # Konfigurasi Owner dan Admin
 USER_ROLES = {
     "owner": {
-        "user_ids": [5988451717],  # Ganti dengan ID Telegram owner
+        "user_ids": [123456789],  # Ganti dengan ID Telegram owner
         "permissions": ["all"]  # Owner punya semua permission
     },
     "admin": {
@@ -33,13 +33,13 @@ USER_ROLES = {
 # Konfigurasi Channel dan Grup
 CHANNEL_CONFIG = {
     "required_channels": [
-        {"username": "dagetfreenewnew", "id": -1001777659755, "link": "https://t.me/dagetfreenewnew", "description": "Channel Utama"},
-        {"username": "listprojec", "id": -1001864187252, "link": "https://t.me/listprojec", "description": "Channel Updates"},
-        {"username": "jasabuatbottelegram", "id": -1002176228512, "link": "https://t.me/jasabuatbottelegram", "description": "Channel Community"}
+        {"username": "channel1", "id": -1001234567890, "link": "https://t.me/channel1", "description": "Channel Utama"},
+        {"username": "channel2", "id": -1001234567891, "link": "https://t.me/channel2", "description": "Channel Updates"},
+        {"username": "channel3", "id": -1001234567892, "link": "https://t.me/channel3", "description": "Channel Community"}
     ],
     "allowed_groups": [
-        {"name": "Grup Utama", "id": -1002519792897, "description": "Grup resmi untuk generate gambar Ghibli"},
-        {"name": "Group VIP", "id": -1002519792897, "description": "Grup V1"}
+        {"name": "Grup Utama", "id": -1001234567893, "description": "Grup resmi untuk generate gambar Ghibli"},
+        {"name": "VIP Group", "id": -1001234567894, "description": "Grup khusus untuk user VIP"}
     ]
 }
 
@@ -52,7 +52,7 @@ FEATURE_CONFIG = {
     "default_strength": 0.6,  # Default strength untuk gaya Ghibli
     "process_timeout": 60,  # Timeout dalam detik untuk proses generate
     "enable_watermark": True,  # Tambahkan watermark pada hasil
-    "watermark_text": "@hiyaok",  # Teks watermark
+    "watermark_text": "@your_username",  # Teks watermark
 }
 
 # Konfigurasi Referral
